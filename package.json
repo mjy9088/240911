@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "concurrently 'sh -c \"cd main && npx next dev\"' 'sh -c \"cd zones/a && npx next dev -p 30000\"'"
+  },
+  "workspaces": [
+    "main",
+    "zones/*"
+  ],
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}
